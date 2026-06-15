@@ -96,9 +96,7 @@ class FatCat {
 
     this.isMoving = isMoving;
 
-    // Rotasi (hadapkan model) supaya forward/backward terasa benar
-    // Agar tetap membelakangi saat mundur, kita tidak memaksa rotation kembali
-    // kecuali tombol forward/left/right ditekan.
+    
     if (direction.backward) {
       this.group.rotation.y = 0;
     } else if (direction.forward) {
